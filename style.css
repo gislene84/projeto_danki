@@ -1,0 +1,109 @@
+*{
+    margin: 0;/*espaçamento na largura do lado de fora do elementos*/
+    padding: 0;/*espaçamento na altura do lado de dentro dos elementos*/
+    box-sizing: border-box;/*os valores do padding não vai influenciar no tamanho do elemneto*/
+    font-family: 'Roboto', sans-serif;/*estilo da fonte*/
+}
+/* CLASSES AUXILIARES*/
+.center{
+    max-width: 1100px;/*largura máxima do elemento*/
+    margin: 0 auto;/*margem cima/baixo de 0, auto centraliza a margem*/
+    padding: 0 2%;/*preenchimento na altura, 0 cima/baixo 2% direita/esquerda*/
+}
+.clear{
+    clear: both;/*É uma palavra-chave que indica que o elemento será movido para baixo para limpar os elementos flutuantes do lado esquerdo e direito.*/
+}
+.w50{
+    float: left;/*O elemento flutua à esquerda de seu contêiner*/
+    width: 50%;/*determina a largura da área de conteúdo de um elemento*/
+    padding: 0 15px;/*preenchimento na altura, 0 cima/baixo 15 direita/esquerda*/
+}
+/**/
+
+section.topo{
+    background-image: linear-gradient(114deg, #250e8a,#00f9f7);/*transição das cores se faz segundo um eixo (linha reta) que possui um sentido (por exemplo: horizontal) e uma direção (por exemplo: da esquerda para a direita)*/
+    padding-top: 40px;/*preenchimento na altura 40px cima*/
+    padding-bottom: 80px;/*	Define o preenchimento de fundo de um elemento*/
+}
+.logo{
+    float: left;/*O elemento flutua à esquerda de seu contêiner*/
+}
+.menu-desktop{
+    float: right;;/*O elemento flutua à direita de seu contêiner*/
+}
+.menu-desktop li{
+    display: inline-block;/*faz com que o elemento HTML seja renderizado inline, dentro do bloco na mesma linha.*/
+    margin: 0 12px;/*margem cima/baixo de 0, direita/esquerda 12*/
+}
+.menu-desktop a{
+    text-decoration: none;/*retirar o traço debaixo da palavra do menu*/
+    color: white;/*cor da fonte*/
+    opacity: 0.6;/*opacidade da cor da fonte*/
+}
+.menu-desktop a:hover{/*muda a cor quando o mouse é colocado em cima da palavra do menu*/
+    opacity: 1;/*opacidade da cor da fonte*/
+}   
+.time-descricao{
+    margin-top: 50px;/*Define a parte superior margin de um elemento*/
+    color: white;/*cor da fonte*/
+}
+.time-descricao h2{
+    font-size: 45px;/*tamanho da fonte*/
+}
+.time-descricao p{
+    font-size: 14px;/*tamanho da fonte*/
+    margin-top: 18px;/*Define a parte superior margin de um elemento*/
+    max-width: 240px;/*largura máxima do elemento*/
+}
+.time-descricao a{
+    display: inline-block;/*faz com que o elemento HTML seja renderizado inline, dentro do bloco na mesma linha.*/
+    margin-top: 18px;/*Define a parte superior margin de um elemento*/
+    padding: 10px 8px;/*preenchimento na altura, 4 cima/baixo 8 direita/esquerda*/
+    text-decoration: none;/*retirar o traço debaixo da palavra do menu*/
+    color: #1b49a5;/*cor da fonte*/
+    border-radius: 8px;/*tamanho da circunferência da bordar*/
+    background: #ffca00;/*cor de fundo*/
+    font-weight: bold;/*propriedade especifica o peso de uma fonte*/
+    box-shadow: 0 20px 30px 0 rgba(37,15,138,0.2);/*utilizado para adicionar efeitos de sombra em volta de um elemento. Você pode especificar mais de um efeito, os separando com virgulas.*/
+}
+.time-imagem img{
+    max-width: 100%;/*largura máxima do elemento*/
+}
+/*slick*/
+.slick-dotted ul{
+    list-style-type: none;/*Definir marcadores de listas não ordenadas, none: sem marcador*/
+    text-align: center;/*centralizar o texto no centro*/
+    position: relative;
+    margin-top: 10px;/*Define a parte superior margin de um elemento*/
+}
+.slick-dotted li{
+    display: inline-block;/*faz com que o elemento HTML seja renderizado inline, dentro do bloco na mesma linha.*/
+    margin: 0 7px;/*margem cima/baixo de 0, direita/esquerda 7*/
+}
+.slick-dotted button:focus{
+    outline: 0;
+}
+.slick-dotted li button{
+    width: 16px;/*determina a largura da área de conteúdo de um elemento*/
+    height: 16px;
+    color: #d8d8d8;/*cor da fonte*/
+    border-width: 0;
+    opacity: 1;/*opacidade da cor*/
+    cursor: pointer;/*forma do cursor do mouse*/
+}
+li.slick-active button{
+    background: #0c3f8a;/*cor de fonte*/
+    color: #0c3f8a;/*cor da fonte*/
+}
+.slick-slide:focus{
+    outline: none;
+}
+/*END*/
+
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 768px) {
+    .w50{
+        width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+    }
+}
