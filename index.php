@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <title>Danki Code - Tema</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--icons font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
@@ -39,8 +41,19 @@
                 <div class="clear"></div><!--clear-->
         </div><!--center-->
     </section><!--topo-->
+    <section class="clientes-slider">
+        <div class="circle"><i class="fas fa-angle-down"></i></div><!--circle-->
+        <div class="center">
+
+        </div><!--center-->
+
+    </section><!--clientes-slider-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
     <script type="text/javascript">
-    $('.container-slider').slick({
+
+    $('.container-slider').slick({ 
         dots: true,
         arrows:false,
         infinite: true,

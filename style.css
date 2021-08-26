@@ -69,11 +69,27 @@ section.topo{
 .time-imagem img{
     max-width: 100%;/*largura máxima do elemento*/
 }
+.circle{
+    transform: translate(-50%,0);/*modifica o espaço*/
+    position: absolute;/* posicionar qualquer elemento de acordo com o elemento pai que tenha um position diferente de static.*/
+    left: 50%;/*posicionar a esquerda*/
+    width: 70px;/*determina a largura da área de conteúdo de um elemento*/
+    height: 70px;/*determina a altura do elemento*/
+    background-color: #ffffff;/*cor de fundo*/
+    border-radius: 50%;/*tamanho da circunferência da bordar*/
+    text-align: center;/*centralizar o texto no centro*/
+    line-height: 70px;/*permite controlar o espaçamento entre as linhas de um texto.*/
+    box-shadow: 0 10px 25px 0 rgba(37,15,139,0.1);/*utilizado para adicionar efeitos de sombra em volta de um elemento. Você pode especificar mais de um efeito, os separando com virgulas.*/
+}
+.circle i{
+    font-size: 30px;/*tamanho da fonte*/
+    color: #1c4aa6;/*cor da fonte*/
+}
 /*slick*/
 .slick-dotted ul{
     list-style-type: none;/*Definir marcadores de listas não ordenadas, none: sem marcador*/
     text-align: center;/*centralizar o texto no centro*/
-    position: relative;
+    position: relative;/*posiciona o elemento em relação a si mesmo.*/
     margin-top: 10px;/*Define a parte superior margin de um elemento*/
 }
 .slick-dotted li{
@@ -87,7 +103,7 @@ section.topo{
     width: 16px;/*determina a largura da área de conteúdo de um elemento*/
     height: 16px;
     color: #d8d8d8;/*cor da fonte*/
-    border-width: 0;
+    border-width: 0;/*largura da bordar*/
     opacity: 1;/*opacidade da cor*/
     cursor: pointer;/*forma do cursor do mouse*/
 }
