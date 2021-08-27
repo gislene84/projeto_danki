@@ -20,6 +20,40 @@
 }
 /**/
 
+/*colocar o MENU NO MODO MOBILE*/
+.menu-mobile{/*esconder o menu para aplicar a responsividade*/
+    display: none;/*retirar o menu*/
+}
+.menu-mobile{
+    float: right;/*O elemento flutua à direita de seu contêiner*/
+}
+.menu-mobile i{
+    font-size: 33px;/*tamanho da fonte*/
+    color: white;/*cor da fonte*/
+    cursor: pointer;/*forma do cursor do mouse*/
+}
+.menu-mobile ul{
+    display: none;/*retirar o menu*/
+    left: 0;/*posicionar a esquerda*/
+    top: 77px;/*superior participa da especificação da posição vertical de um elemento posicionado*/
+    width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+    position: absolute;/* posicionar qualquer elemento de acordo com o elemento pai que tenha um position diferente de static.*/
+    list-style-type: none;/*tirar as bolinhas do menu*/
+}
+.menu-mobile li{
+    padding: 8px 0;/*preenchimento na altura, 8 cima/baixo 0 direita/esquerda*/
+    text-align: center;/*centralizar o texto no centro*/
+    display: block;/*faz com que o elemento HTML seja renderizado como bloco, tal como os parágrafos e os cabeçalhos o são*/
+    width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+    background: white;/*cor de fundo*/
+    border-bottom: 1px solid #00f9f7;/* tamanho, forma e cor bordar inferior do elemento*/
+}
+.menu-mobile a{
+    display: block;/*faz com que o elemento HTML seja renderizado como bloco, tal como os parágrafos e os cabeçalhos o são*/
+    text-decoration: none;/*retirar o traço debaixo da palavra do menu*/
+    color: #202020;/*cor da fonte*/
+}
+
 section.topo{
     background-image: linear-gradient(114deg, #250e8a,#00f9f7);/*transição das cores se faz segundo um eixo (linha reta) que possui um sentido (por exemplo: horizontal) e uma direção (por exemplo: da esquerda para a direita)*/
     padding-top: 40px;/*preenchimento na altura 40px cima*/
@@ -70,8 +104,9 @@ section.topo{
     max-width: 100%;/*largura máxima do elemento*/
 }
 .circle{
-    transform: translate(-50%,0);/*modifica o espaço*/
+    transform: translate(-50%);/*modifica o espaço*/
     position: absolute;/* posicionar qualquer elemento de acordo com o elemento pai que tenha um position diferente de static.*/
+    margin-top: -20px;/*Define a parte superior margin de um elemento*/
     left: 50%;/*posicionar a esquerda*/
     width: 70px;/*determina a largura da área de conteúdo de um elemento*/
     height: 70px;/*determina a altura do elemento*/
@@ -82,8 +117,16 @@ section.topo{
     box-shadow: 0 10px 25px 0 rgba(37,15,139,0.1);/*utilizado para adicionar efeitos de sombra em volta de um elemento. Você pode especificar mais de um efeito, os separando com virgulas.*/
 }
 .circle i{
+    position: relative;/*posiciona o elemento em relação a si mesmo.*/
+    top: 5px;/*superior participa da especificação da posição vertical de um elemento posicionado*/
     font-size: 30px;/*tamanho da fonte*/
     color: #1c4aa6;/*cor da fonte*/
+}
+section.clientes-slider{
+    padding: 60px 0;/*preenchimento na altura, 60 cima/baixo 0 direita/esquerda*/
+}
+section.clientes-slider img{
+    max-width: 100%;/*largura máxima do elemento RESPONSIVO*/
 }
 /*slick*/
 .slick-dotted ul{
@@ -101,7 +144,8 @@ section.topo{
 }
 .slick-dotted li button{
     width: 16px;/*determina a largura da área de conteúdo de um elemento*/
-    height: 16px;
+    height: 16px;/*determina a altura do elemento*/ 
+    border-radius: 8px;/*tamanho da circunferência da bordar*/
     color: #d8d8d8;/*cor da fonte*/
     border-width: 0;/*largura da bordar*/
     opacity: 1;/*opacidade da cor*/
@@ -114,12 +158,156 @@ li.slick-active button{
 .slick-slide:focus{
     outline: none;
 }
+section.diferenciais{
+    padding: 30px 0;/*preenchimento na altura, 30 cima/baixo 0 direita/esquerda*/
+}
+section.diferenciais h2{
+    color: #202020;/*cor da fonte*/
+    font-size: 30px;/*tamanho da fonte*/
+    font-weight: normal;/*propriedade especifica o peso de uma fonte*/
+    text-align: center;/*centralizar o texto no centro*/
+}
+.icons-diferenciais{
+    flex-wrap: wrap;/*Quebra a linha assim que um dos flex itens não puder mais ser compactado.*/
+    display: flex;/*Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens.*/
+    margin-top: 80px;/*Define a parte superior margin de um elemento*/
+}
+.box-single-diferenciais img{/*trabalhando o responsivo das imagens*/
+    max-width: 100%;/*largura máxima do elemento RESPONSIVO*/
+}
+.box-single-diferenciais{
+    text-align: center;/*centralizar o texto no centro*/
+    width: 33.3%;/*determina a largura da área de conteúdo de um elemento*/
+    padding: 0 10px;/*preenchimento na altura, 0 cima/baixo 10 direita/esquerda*/
+    margin-bottom: 30px;/*define a margin area na parte inferior de um elemento*/
+}
+.box-single-diferenciais h3{
+    font-size: 17px;/*tamanho da fonte*/
+    font-weight: normal;/*propriedade especifica o peso de uma fonte*/
+    color: #202020;/*cor da fonte*/
+    margin: 10px 0;/*margem cima/baixo de 10, direita/esquerda 0 */
+}
+.box-single-diferenciais p{
+    font-size: 14px;/*tamanho da fonte*/
+    color: #202020;/*cor da fonte*/
+}
 /*END*/
+
+section.sobre-time{
+    padding: 40px 0;/*preenchimento na altura, 40 cima/baixo 0 direita/esquerda*/
+    background-color: #f4f9fd;/*cor de fundo*/
+}
+.img-time{
+    max-width: 100%;/*largura máxima do elemento RESPONSIVO*/
+}
+.time-descricao-2{
+    padding: 0 20px;/*preenchimento na altura, 0 cima/baixo 20 direita/esquerda*/
+}
+.time-descricao-2 h2{
+    background-image: url('./img/forma.png');
+    background-repeat: no-repeat;
+    color: #202020;/*cor da fonte*/
+    line-height: 35px;/*distância entre as linhas*/
+    font-size: 24px;/*tamanho da fonte*/
+    margin-bottom: 30px;/*define a margin area na parte inferior de um elemento*/
+    
+}
+.time-descricao-2 p{
+    padding-right: 30px;/*Define o preenchimento direito de um elemento*/
+    color: #272727;/*cor da fonte*/
+    font-size: 15px;/*tamanho da fonte*/
+    margin-bottom: 30px;/*define a margin area na parte inferior de um elemento*/
+}
+section.depoimentos h2{
+    text-align: center;/*centralizar o texto no centro*/
+    color: white;/*cor da fonte*/
+    font-weight: normal;/*propriedade especifica o peso de uma fonte*/
+    font-size: 30px;/*tamanho da fonte*/
+}
+section.depoimentos{
+    padding: 100px 0;/*preenchimento na altura, 100 cima/baixo 0 direita/esquerda*/
+    background-color: #23188f;/*cor de fundo*/
+}
+.depoimentos-box{
+    overflow: hidden;/* Esconde o conteúdo excedente */
+    margin: 10px auto;/*margem cima/baixo de 10 , auto centralizar*/
+    max-width: 800px;/*largura máxima do elemento*/
+    color: white;/*cor da fonte*/
+    margin-top: 40px;/*Define a parte superior margin de um elemento*/
+}
+.depoimento-single p{
+    text-align: center;/*alinha o texto no centro*/
+    color: white;/*cor da fonte*/
+    margin-bottom: 15px;/*define a margin area na parte inferior de um elemento*/
+}
+.depoimento-single img{
+    width: 70px;/*determina a largura da área de conteúdo de um elemento*/
+    height: 70px;/*determina a altura do elemento*/ 
+    display: block;/*faz com que o elemento HTML seja renderizado como bloco, tal como os parágrafos e os cabeçalhos o são*/
+    margin: 10px auto;/*margem cima/baixo de 10, auto centralizar*/
+}
+.depoimento-single{
+    width: 100%;/*determina a largura da área de conteúdo de um elemento RESPONSIVO*/
+    display: inline-block;/*faz com que o elemento HTML seja renderizado inline, dentro do bloco na mesma linha.*/
+}
+section.metodologia{
+    position: absolute;/* posicionar qualquer elemento de acordo com o elemento pai que tenha um position diferente de static.*/
+    z-index: 10;/*sempre na parte de cima*/
+    top: -40px;/*superior participa da especificação da posição vertical de um elemento posicionado*/
+    left: 50%;/*posicionar a esquerda*/
+    transform: translateX(-50%);/*modifica o espaço*/   
+    width: 100%;/*determina a largura da área de conteúdo de um elemento RESPONSIVO*/
+    max-width: 940px;/*largura máxima do elemento*/
+    margin: 0 auto;/*margem cima/baixo de 0, auto centralizar*/
+    padding: 40px 0;/*preenchimento na altura, 40 cima/baixo 0 direita/esquerda*/
+    box-shadow: 10px 20px 60px rgba(0,0,0,0.06);/*utilizado para adicionar efeitos de sombra em volta de um elemento. Você pode especificar mais de um efeito, os separando com virgulas.*/
+    background: white;/*cor de fundo*/
+    border-top: 3px solid #ffca00;/*tamanho, forma e cor da borda superior*/
+    text-align: center;/*alinha o texto no centro*/
+}
+section.metodologia h2{
+    color: #232931;/*cor da fonte*/
+    font-size: 24px;/*tamanho da fonte*/
+    font-weight: normal;/*propriedade especifica o peso de uma fonte*/
+}
+section.metodologia p{
+    color: #b4b4b4;/*cor da fonte*/
+    font-size: 14px;/*tamanho da fonte*/
+    margin: 15px 0;/*margem cima/baixo de 15, direita/esquerda 0*/
+}
+section.metodologia a{
+    background-color: #23188f;/*cor de fundo*/
+    color: white;/*cor da fonte*/
+    padding: 8px 15px;/*preenchimento na altura, 8 cima/baixo 15 direita/esquerda*/
+    border-radius: 5px;/*tamanho da circunferência da bordar*/
+    text-decoration: none;/*retirar o traço debaixo da palavra do menu*/
+    font-size: 14px;/*tamanho da fonte*/
+    display: inline-block;/*faz com que o elemento HTML seja renderizado inline, dentro do bloco na mesma linha.*/
+    margin-top: 8px;/*Define a parte superior margin de um elemento*/
+}
+footer{
+    position: relative;/*posiciona o elemento em relação a si mesmo.*/
+    padding-top: 300px;/*preenchimento na altura 40px cima*/
+    padding-bottom: 100px;/*Define o preenchimento de fundo de um elemento*/
+    background: white;/*cor de fundo*/
+}
 
 
 /*RESPONSIVIDADE*/
 @media screen and (max-width: 768px) {
+    .box-single-diferenciais{
+        width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+    }
     .w50{
         width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+    }
+    .img-time{
+        margin-top: 30px;/*Define a parte superior margin de um elemento*/
+    }
+    .menu-mobile{
+        display: block;
+    }
+    .menu-desktop{
+        display: none;
     }
 }
