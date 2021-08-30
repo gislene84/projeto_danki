@@ -1,147 +1,176 @@
 *{
-    margin: 0;/*espaçamento na largura do lado de fora do elementos*/
-    padding: 0;/*espaçamento na altura do lado de dentro dos elementos*/
-    box-sizing: border-box;/*os valores do padding não vai influenciar no tamanho do elemneto*/
-    font-family: 'Roboto', sans-serif;/*estilo da fonte*/
+	margin: 0;/*espaçamento na largura do lado de fora do elementos*/
+	padding: 0;/*espaçamento na altura do lado de dentro dos elementos*/
+	box-sizing: border-box;/*os valores do padding não vai influenciar no tamanho do elemneto*/
+	font-family: "Roboto";/*estilo da fonte*/
 }
-/* CLASSES AUXILIARES*/
+/*
+	Classes Auxiliares
+*/
 .center{
-    max-width: 1100px;/*largura máxima do elemento*/
-    margin: 0 auto;/*margem cima/baixo de 0, auto centraliza a margem*/
-    padding: 0 2%;/*preenchimento na altura, 0 cima/baixo 2% direita/esquerda*/
+	max-width: 1100px;/*largura máxima do elemento*/
+	margin: 0 auto;/*margem cima/baixo de 0, auto centraliza a margem*/
+	padding:0 2%;/*preenchimento na altura, 0 cima/baixo 2% direita/esquerda*/
 }
+
 .clear{
     clear: both;/*É uma palavra-chave que indica que o elemento será movido para baixo para limpar os elementos flutuantes do lado esquerdo e direito.*/
 }
+
 .w50{
     float: left;/*O elemento flutua à esquerda de seu contêiner*/
     width: 50%;/*determina a largura da área de conteúdo de um elemento*/
-    padding: 0 15px;/*preenchimento na altura, 0 cima/baixo 15 direita/esquerda*/
+    padding:0 15px;/*preenchimento na altura, 0 cima/baixo 15 direita/esquerda*/
 }
-/**/
 
 /*colocar o MENU NO MODO MOBILE*/
-.menu-mobile{/*esconder o menu para aplicar a responsividade*/
-    display: none;/*retirar o menu*/
-}
+
 .menu-mobile{
-    float: right;/*O elemento flutua à direita de seu contêiner*/
-}
-.menu-mobile i{
-    font-size: 33px;/*tamanho da fonte*/
-    color: white;/*cor da fonte*/
-    cursor: pointer;/*forma do cursor do mouse*/
-}
-.menu-mobile ul{
     display: none;/*retirar o menu*/
-    left: 0;/*posicionar a esquerda*/
-    top: 77px;/*superior participa da especificação da posição vertical de um elemento posicionado*/
-    width: 100%;/*determina a largura da área de conteúdo de um elemento*/
-    position: absolute;/* posicionar qualquer elemento de acordo com o elemento pai que tenha um position diferente de static.*/
-    list-style-type: none;/*tirar as bolinhas do menu*/
 }
+
+.menu-mobile{
+	float: right;/*O elemento flutua à direita de seu contêiner*/
+}
+
+.menu-mobile i{
+	font-size: 33px;/*tamanho da fonte*/
+	color: white;/*cor da fonte*/
+	cursor: pointer;/*forma do cursor do mouse*/
+}
+
+.menu-mobile ul{
+	left: 0;/*posicionar a esquerda*/
+	top: 77px;/*superior participa da especificação da posição vertical de um elemento posicionado*/
+	display: none;/*retirar o menu*/
+	width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+	position: absolute;/* posicionar qualquer elemento de acordo com o elemento pai que tenha um position diferente de static.*/
+	list-style-type: none;/*tirar as bolinhas do menu*/
+}
+
 .menu-mobile li{
-    padding: 8px 0;/*preenchimento na altura, 8 cima/baixo 0 direita/esquerda*/
-    text-align: center;/*centralizar o texto no centro*/
-    display: block;/*faz com que o elemento HTML seja renderizado como bloco, tal como os parágrafos e os cabeçalhos o são*/
-    width: 100%;/*determina a largura da área de conteúdo de um elemento*/
-    background: white;/*cor de fundo*/
-    border-bottom: 1px solid #00f9f7;/* tamanho, forma e cor bordar inferior do elemento*/
+	padding: 8px 0;/*preenchimento na altura, 8 cima/baixo 0 direita/esquerda*/
+	text-align: center;/*centralizar o texto no centro*/
+	display: block;/*faz com que o elemento HTML seja renderizado como bloco, tal como os parágrafos e os cabeçalhos o são*/
+	width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+	background: white;/*cor de fundo*/
+	border-bottom: 1px solid #00f9f7;/*tamanho, forma e cor bordar inferior do elemento*/
 }
+
 .menu-mobile a{
-    display: block;/*faz com que o elemento HTML seja renderizado como bloco, tal como os parágrafos e os cabeçalhos o são*/
-    text-decoration: none;/*retirar o traço debaixo da palavra do menu*/
-    color: #202020;/*cor da fonte*/
+	display: block;/*faz com que o elemento HTML seja renderizado como bloco, tal como os parágrafos e os cabeçalhos o são*/
+	text-decoration: none;/*retirar o traço debaixo da palavra do menu*/
+	color: #202020;/*cor da fonte*/
 }
 
 section.topo{
-    background-image: linear-gradient(114deg, #250e8a,#00f9f7);/*transição das cores se faz segundo um eixo (linha reta) que possui um sentido (por exemplo: horizontal) e uma direção (por exemplo: da esquerda para a direita)*/
-    padding-top: 40px;/*preenchimento na altura 40px cima*/
-    padding-bottom: 80px;/*	Define o preenchimento de fundo de um elemento*/
+	background-image: linear-gradient(114deg, #250e8a, #00f9f7);/*transição das cores se faz segundo um eixo (linha reta) que possui um sentido (por exemplo: horizontal) e uma direção (por exemplo: da esquerda para a direita)*/
+	padding-top: 40px;/*preenchimento na altura 40px cima*/
+	padding-bottom: 80px;/*	Define o preenchimento de fundo de um elemento*/
 }
+
 .logo{
-    float: left;/*O elemento flutua à esquerda de seu contêiner*/
+	float: left;/*O elemento flutua à esquerda de seu contêiner*/
 }
+
 .menu-desktop{
-    float: right;;/*O elemento flutua à direita de seu contêiner*/
+	float: right;/*O elemento flutua à direita de seu contêiner*/
 }
+
 .menu-desktop li{
-    display: inline-block;/*faz com que o elemento HTML seja renderizado inline, dentro do bloco na mesma linha.*/
-    margin: 0 12px;/*margem cima/baixo de 0, direita/esquerda 12*/
+	display: inline-block;/*faz com que o elemento HTML seja renderizado inline, dentro do bloco na mesma linha.*/
+	margin:0 15px;/*margem cima/baixo de 0, direita/esquerda 15*/
 }
+
 .menu-desktop a{
-    text-decoration: none;/*retirar o traço debaixo da palavra do menu*/
-    color: white;/*cor da fonte*/
-    opacity: 0.6;/*opacidade da cor da fonte*/
+	text-decoration: none;/*retirar o traço debaixo da palavra do menu*/
+	color: white;/*cor da fonte*/
+	opacity: 0.6;/*opacidade da cor da fonte*/
 }
+
 .menu-desktop a:hover{/*muda a cor quando o mouse é colocado em cima da palavra do menu*/
-    opacity: 1;/*opacidade da cor da fonte*/
-}   
+	opacity: 1;/*opacidade da cor da fonte*/
+}
+
 .time-descricao{
-    margin-top: 50px;/*Define a parte superior margin de um elemento*/
-    color: white;/*cor da fonte*/
+	margin-top:50px;/*Define a parte superior margin de um elemento*/
+	color: white;/*cor da fonte*/
 }
+
 .time-descricao h2{
-    font-size: 45px;/*tamanho da fonte*/
+	font-size: 45px;/*tamanho da fonte*/
 }
+
 .time-descricao p{
-    font-size: 14px;/*tamanho da fonte*/
-    margin-top: 18px;/*Define a parte superior margin de um elemento*/
-    max-width: 240px;/*largura máxima do elemento*/
+	font-size: 14px;/*tamanho da fonte*/
+	margin-top: 10px;/*Define a parte superior margin de um elemento*/
+	max-width: 240px;/*largura máxima do elemento*/
 }
+
 .time-descricao a{
-    display: inline-block;/*faz com que o elemento HTML seja renderizado inline, dentro do bloco na mesma linha.*/
-    margin-top: 18px;/*Define a parte superior margin de um elemento*/
-    padding: 10px 8px;/*preenchimento na altura, 4 cima/baixo 8 direita/esquerda*/
-    text-decoration: none;/*retirar o traço debaixo da palavra do menu*/
-    color: #1b49a5;/*cor da fonte*/
-    border-radius: 8px;/*tamanho da circunferência da bordar*/
-    background: #ffca00;/*cor de fundo*/
-    font-weight: bold;/*propriedade especifica o peso de uma fonte*/
-    box-shadow: 0 20px 30px 0 rgba(37,15,138,0.2);/*utilizado para adicionar efeitos de sombra em volta de um elemento. Você pode especificar mais de um efeito, os separando com virgulas.*/
+	display: inline-block;/*faz com que o elemento HTML seja renderizado inline, dentro do bloco na mesma linha.*/
+	margin-top: 14px;/*Define a parte superior margin de um elemento*/
+	padding:10px 8px;/*preenchimento na altura, 4 cima/baixo 8 direita/esquerda*/
+	text-decoration: none;/*retirar o traço debaixo da palavra do menu*/
+	color: #1b49a5;/*cor da fonte*/
+	font-weight: bold;/*propriedade especifica o peso de uma fonte*/
+	border-radius: 8px;/*tamanho da circunferência da bordar*/
+	background: #ffca00;/*cor de fundo*/
+	box-shadow: 0 20px 30px 0 rgba(37, 15, 138, 0.2);/*utilizado para adicionar efeitos de sombra em volta de um elemento. Você pode especificar mais de um efeito, os separando com virgulas.*/
 }
+
 .time-imagem img{
     max-width: 100%;/*largura máxima do elemento*/
 }
+
 .circle{
-    transform: translate(-50%);/*modifica o espaço*/
-    position: absolute;/* posicionar qualquer elemento de acordo com o elemento pai que tenha um position diferente de static.*/
-    margin-top: -20px;/*Define a parte superior margin de um elemento*/
-    left: 50%;/*posicionar a esquerda*/
-    width: 70px;/*determina a largura da área de conteúdo de um elemento*/
-    height: 70px;/*determina a altura do elemento*/
-    background-color: #ffffff;/*cor de fundo*/
-    border-radius: 50%;/*tamanho da circunferência da bordar*/
-    text-align: center;/*centralizar o texto no centro*/
-    line-height: 70px;/*permite controlar o espaçamento entre as linhas de um texto.*/
-    box-shadow: 0 10px 25px 0 rgba(37,15,139,0.1);/*utilizado para adicionar efeitos de sombra em volta de um elemento. Você pode especificar mais de um efeito, os separando com virgulas.*/
+	position: absolute;/* posicionar qualquer elemento de acordo com o elemento pai que tenha um position diferente de static.*/
+	left: 50%;/*posicionar a esquerda*/
+	margin-top:-20px;/*Define a parte superior margin de um elemento*/
+	transform: translateX(-50%);/*modifica o espaço*/
+   width: 70px;/*determina a largura da área de conteúdo de um elemento*/
+  height: 70px;/*determina a altura do elemento*/
+  text-align: center;/*centralizar o texto no centro*/
+  line-height: 70px;/*permite controlar o espaçamento entre as linhas de um texto.*/
+  border-radius: 50%;/*tamanho da circunferência da bordar*/
+  background-color: #ffffff;/*cor de fundo*/
+  box-shadow: 0 10px 25px 0 rgba(37, 15, 139, 0.1);/*utilizado para adicionar efeitos de sombra em volta de um elemento. Você pode especificar mais de um efeito, os separando com virgulas.*/
 }
+
 .circle i{
     position: relative;/*posiciona o elemento em relação a si mesmo.*/
     top: 5px;/*superior participa da especificação da posição vertical de um elemento posicionado*/
     font-size: 30px;/*tamanho da fonte*/
     color: #1c4aa6;/*cor da fonte*/
 }
+
 section.clientes-slider{
     padding: 60px 0;/*preenchimento na altura, 60 cima/baixo 0 direita/esquerda*/
 }
+
 section.clientes-slider img{
+    padding:0 20px;
     max-width: 100%;/*largura máxima do elemento RESPONSIVO*/
 }
-/*slick*/
+
+/****SLICK SLIDER****/
+
 .slick-dotted ul{
     list-style-type: none;/*Definir marcadores de listas não ordenadas, none: sem marcador*/
     text-align: center;/*centralizar o texto no centro*/
     position: relative;/*posiciona o elemento em relação a si mesmo.*/
     margin-top: 10px;/*Define a parte superior margin de um elemento*/
 }
+
 .slick-dotted li{
-    display: inline-block;/*faz com que o elemento HTML seja renderizado inline, dentro do bloco na mesma linha.*/
+	display: inline-block;/*faz com que o elemento HTML seja renderizado inline, dentro do bloco na mesma linha.*/
     margin: 0 7px;/*margem cima/baixo de 0, direita/esquerda 7*/
 }
+
 .slick-dotted button:focus{
-    outline: 0;
+	outline: 0;
 }
+
 .slick-dotted li button{
     width: 16px;/*determina a largura da área de conteúdo de um elemento*/
     height: 16px;/*determina a altura do elemento*/ 
@@ -151,130 +180,156 @@ section.clientes-slider img{
     opacity: 1;/*opacidade da cor*/
     cursor: pointer;/*forma do cursor do mouse*/
 }
+
 li.slick-active button{
     background: #0c3f8a;/*cor de fonte*/
     color: #0c3f8a;/*cor da fonte*/
 }
-.slick-slide:focus{
-    outline: none;
+
+.slick-slide:focus { 
+    outline: none; 
 }
+
+/**END SLICK**/
+
+
 section.diferenciais{
-    padding: 30px 0;/*preenchimento na altura, 30 cima/baixo 0 direita/esquerda*/
+	padding: 30px 0;/*preenchimento na altura, 30 cima/baixo 0 direita/esquerda*/
 }
+
 section.diferenciais h2{
-    color: #202020;/*cor da fonte*/
+	color: #202020;/*cor da fonte*/
     font-size: 30px;/*tamanho da fonte*/
     font-weight: normal;/*propriedade especifica o peso de uma fonte*/
     text-align: center;/*centralizar o texto no centro*/
 }
+
 .icons-diferenciais{
-    flex-wrap: wrap;/*Quebra a linha assim que um dos flex itens não puder mais ser compactado.*/
+	flex-wrap: wrap;/*Quebra a linha assim que um dos flex itens não puder mais ser compactado.*/
     display: flex;/*Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens.*/
     margin-top: 80px;/*Define a parte superior margin de um elemento*/
 }
-.box-single-diferenciais img{/*trabalhando o responsivo das imagens*/
-    max-width: 100%;/*largura máxima do elemento RESPONSIVO*/
-}
+
+
 .box-single-diferenciais{
-    text-align: center;/*centralizar o texto no centro*/
+	text-align: center;/*centralizar o texto no centro*/
     width: 33.3%;/*determina a largura da área de conteúdo de um elemento*/
     padding: 0 10px;/*preenchimento na altura, 0 cima/baixo 10 direita/esquerda*/
     margin-bottom: 30px;/*define a margin area na parte inferior de um elemento*/
 }
+
+.box-single-diferenciais img{/*trabalhando o responsivo das imagens*/
+	max-width: 100%;/*largura máxima do elemento RESPONSIVO*/
+}
+
+
 .box-single-diferenciais h3{
-    font-size: 17px;/*tamanho da fonte*/
+	font-size: 17px;/*tamanho da fonte*/
     font-weight: normal;/*propriedade especifica o peso de uma fonte*/
     color: #202020;/*cor da fonte*/
     margin: 10px 0;/*margem cima/baixo de 10, direita/esquerda 0 */
 }
+
 .box-single-diferenciais p{
     font-size: 14px;/*tamanho da fonte*/
     color: #202020;/*cor da fonte*/
 }
+
 /*END*/
 
 section.sobre-time{
-    padding: 40px 0;/*preenchimento na altura, 40 cima/baixo 0 direita/esquerda*/
+	padding: 40px 0;/*preenchimento na altura, 40 cima/baixo 0 direita/esquerda*/
     background-color: #f4f9fd;/*cor de fundo*/
+
 }
-.img-time{
+
+.img-time img{
     max-width: 100%;/*largura máxima do elemento RESPONSIVO*/
 }
+
 .time-descricao-2{
-    padding: 0 20px;/*preenchimento na altura, 0 cima/baixo 20 direita/esquerda*/
+	padding: 0 20px;/*preenchimento na altura, 0 cima/baixo 20 direita/esquerda*/
 }
+
 .time-descricao-2 h2{
     background-image: url('./img/forma.png');
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;/*não repetir a imagem*/
     color: #202020;/*cor da fonte*/
     line-height: 35px;/*distância entre as linhas*/
     font-size: 24px;/*tamanho da fonte*/
     margin-bottom: 30px;/*define a margin area na parte inferior de um elemento*/
-    
 }
+
 .time-descricao-2 p{
     padding-right: 30px;/*Define o preenchimento direito de um elemento*/
     color: #272727;/*cor da fonte*/
     font-size: 15px;/*tamanho da fonte*/
     margin-bottom: 30px;/*define a margin area na parte inferior de um elemento*/
 }
+
+section.depoimentos{
+	padding: 100px 0;/*preenchimento na altura, 100 cima/baixo 0 direita/esquerda*/
+    background-color: #23188f;/*cor de fundo*/
+}
+
 section.depoimentos h2{
     text-align: center;/*centralizar o texto no centro*/
     color: white;/*cor da fonte*/
     font-weight: normal;/*propriedade especifica o peso de uma fonte*/
     font-size: 30px;/*tamanho da fonte*/
 }
-section.depoimentos{
-    padding: 100px 0;/*preenchimento na altura, 100 cima/baixo 0 direita/esquerda*/
-    background-color: #23188f;/*cor de fundo*/
-}
+
 .depoimentos-box{
-    overflow: hidden;/* Esconde o conteúdo excedente */
-    margin: 10px auto;/*margem cima/baixo de 10 , auto centralizar*/
-    max-width: 800px;/*largura máxima do elemento*/
-    color: white;/*cor da fonte*/
-    margin-top: 40px;/*Define a parte superior margin de um elemento*/
+	margin:10px auto;/*margem cima/baixo de 10 , auto centralizar*/
+	max-width: 800px;/*largura máxima do elemento*/
+	overflow: hidden;/* Esconde o conteúdo excedente */
+	width: 100%;;/*determina a largura da área de conteúdo de um elemento*/
+	display: block;
+}
+.depoimento-single{
+    width: 100%;
+    display: inline-block;
 }
 .depoimento-single p{
     text-align: center;/*alinha o texto no centro*/
-    color: white;/*cor da fonte*/
     margin-bottom: 15px;/*define a margin area na parte inferior de um elemento*/
+    color: white;/*cor da fonte*/
 }
 .depoimento-single img{
-    width: 70px;/*determina a largura da área de conteúdo de um elemento*/
-    height: 70px;/*determina a altura do elemento*/ 
-    display: block;/*faz com que o elemento HTML seja renderizado como bloco, tal como os parágrafos e os cabeçalhos o são*/
-    margin: 10px auto;/*margem cima/baixo de 10, auto centralizar*/
+	width: 70px;/*determina a largura da área de conteúdo de um elemento*/
+	height: 70px;/*determina a altura do elemento*/ 
+	display: block;/*faz com que o elemento HTML seja renderizado como bloco, tal como os parágrafos e os cabeçalhos o são*/
+	margin: 10px auto;/*margem cima/baixo de 10, auto centralizar*/
+	border-radius: 50%;/*tamanho da circunferência da bordar*/
 }
-.depoimento-single{
-    width: 100%;/*determina a largura da área de conteúdo de um elemento RESPONSIVO*/
-    display: inline-block;/*faz com que o elemento HTML seja renderizado inline, dentro do bloco na mesma linha.*/
-}
+
 section.metodologia{
-    position: absolute;/* posicionar qualquer elemento de acordo com o elemento pai que tenha um position diferente de static.*/
-    z-index: 10;/*sempre na parte de cima*/
-    top: -40px;/*superior participa da especificação da posição vertical de um elemento posicionado*/
-    left: 50%;/*posicionar a esquerda*/
-    transform: translateX(-50%);/*modifica o espaço*/   
-    width: 100%;/*determina a largura da área de conteúdo de um elemento RESPONSIVO*/
-    max-width: 940px;/*largura máxima do elemento*/
-    margin: 0 auto;/*margem cima/baixo de 0, auto centralizar*/
-    padding: 40px 0;/*preenchimento na altura, 40 cima/baixo 0 direita/esquerda*/
-    box-shadow: 10px 20px 60px rgba(0,0,0,0.06);/*utilizado para adicionar efeitos de sombra em volta de um elemento. Você pode especificar mais de um efeito, os separando com virgulas.*/
-    background: white;/*cor de fundo*/
-    border-top: 3px solid #ffca00;/*tamanho, forma e cor da borda superior*/
-    text-align: center;/*alinha o texto no centro*/
+	position: absolute;/* posicionar qualquer elemento de acordo com o elemento pai que tenha um position diferente de static.*/
+	z-index: 10;/*sempre na parte de cima*/
+	top:-40px;/*superior participa da especificação da posição vertical de um elemento posicionado*/
+	left: 50%;/*posicionar a esquerda*/
+	width: 100%;/*determina a largura da área de conteúdo de um elemento RESPONSIVO*/
+	transform:translateX(-50%);/*modifica o espaço*/ 
+	max-width: 940px;/*largura máxima do elemento*/
+	margin: 0 auto;/*margem cima/baixo de 0, auto centralizar*/
+	padding: 40px 0;/*preenchimento na altura, 40 cima/baixo 0 direita/esquerda*/
+	background: white;/*cor de fundo*/
+	border-top: 3px solid #ffca00;/*tamanho, forma e cor da borda superior*/
+	box-shadow: 10px 20px 60px 0 rgba(0, 0, 0, 0.06);/*utilizado para adicionar efeitos de sombra em volta de um elemento. Você pode especificar mais de um efeito, os separando com virgulas.*/
+	text-align: center;/*alinha o texto no centro*/
 }
+
 section.metodologia h2{
     color: #232931;/*cor da fonte*/
     font-size: 24px;/*tamanho da fonte*/
     font-weight: normal;/*propriedade especifica o peso de uma fonte*/
 }
 section.metodologia p{
-    color: #b4b4b4;/*cor da fonte*/
+	color: #b4b4b4;/*cor da fonte*/
     font-size: 14px;/*tamanho da fonte*/
     margin: 15px 0;/*margem cima/baixo de 15, direita/esquerda 0*/
 }
+
 section.metodologia a{
     background-color: #23188f;/*cor de fundo*/
     color: white;/*cor da fonte*/
@@ -285,29 +340,183 @@ section.metodologia a{
     display: inline-block;/*faz com que o elemento HTML seja renderizado inline, dentro do bloco na mesma linha.*/
     margin-top: 8px;/*Define a parte superior margin de um elemento*/
 }
+
 footer{
-    position: relative;/*posiciona o elemento em relação a si mesmo.*/
+	position: relative;/*posiciona o elemento em relação a si mesmo.*/
     padding-top: 300px;/*preenchimento na altura 40px cima*/
     padding-bottom: 100px;/*Define o preenchimento de fundo de um elemento*/
     background: white;/*cor de fundo*/
 }
 
+footer > .center{
+    display: flex;/*Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens.*/
+    flex-wrap: wrap;/*Quebra a linha assim que um dos flex itens não puder mais ser compactado.*/
+}
+
+.col-footer{
+	width: 20%;/*determina a largura da área de conteúdo de um elemento*/
+}
+
+.col-footer h2{
+    color: #232931;/*cor da fonte*/
+    font-size: 13px;/*tamanho da fonte*/
+    font-weight: normal;/*propriedade especifica o peso de uma fonte*/
+    margin-bottom: 15px;/*define a margin area na parte inferior de um elemento*/
+    text-transform: uppercase;/*deixar as letras todas maíusculas*/
+}
+.col-footer a{
+    font-size: 14px;/*tamanho da fonte*/
+    color: #b4b4b4;/*cor da fonte*/
+    display: block;/*o elemento ficar um embaixo do outro*/
+    margin-top: 16px;/*Define a parte superior margin de um elemento*/
+    text-decoration: none;/*retirar o traço de baixo das palavras*/
+}
+.col-footer-img{
+    width: 40%;/*determina a largura da área de conteúdo de um elemento*/
+    text-align: right;/*O elemento flutua à direita de seu contêiner*/
+}
+
+/*Página sobre*/
+/* DEIXAR O SOBRE.PHP RESPONSIVO*/
+section.sobre-equipe img{
+    max-width: 100%;/*largura máxima do elemento RESPONSIVIDADE*/
+}
+section.sobre-equipe{
+	padding: 40px 0;/*preenchimento na altura, 40 cima/baixo 0 direita/esquerda*/
+}
+
+.equipe-sobre-text h2{
+    font-size: 45px;/*tamanho da fonte*/
+    color: #202020;/*cor da fonte*/
+    padding: 0 20px;/*preenchimento na altura, 0 cima/baixo 20 direita/esquerda*/
+}
+.equipe-sobre-text p{
+	font-size: 16px;/*tamanho da fonte*/
+	line-height: 32px;/*espaçamento entre as linhas*/
+	color:#202020;/*cor da fonte*/
+	padding:0 20px;/*preenchimento na altura, 0 cima/baixo 20 direita/esquerda*/
+}
+
+section.sobre-img{
+	padding: 100px 0;/*preenchimento na altura, 100 cima/baixo 0 direita/esquerda*/
+    background-color: #f4f9fd;/*cor de fundo*/
+}
+
+.sobre-img > .center{
+    display: flex;/*Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens.*/
+    flex-wrap: wrap;/*Quebra a linha assim que um dos flex itens não puder mais ser compactado.*/
+}
+
+.sobre-img img{
+    max-width: 100%;/*largura máxima do elemento RESPONSIVIDADE*/
+}
+
+.sobre-img .img-sobre{
+    padding: 0 30px;/*preenchimento na altura, 0 cima/baixo 20 direita/esquerda*/
+    width: 25%;/*determina a largura da área de conteúdo de um elemento*/
+}
+
+section.contato{
+	padding:30px 0;/*preenchimento na altura, 0 cima/baixo 20 direita/esquerda*/
+}
+
+.contato-info h2{
+	color: #202020;
+	font-size: 43px;
+	font-weight: normal;
+}
+
+.contato-info p{
+	color: #202020;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+.mapa-container{
+	width: 100%;
+	padding-top: 70%;
+	position: relative;
+}
+
+div#mapa{
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: gray;
+	width: 100%;
+	height: 100%;
+}
+.contato-form{padding:0 30px;margin-top:40px;}
+.contato-form input[type=text]{
+	width: 100%;
+	height: 48px;
+	margin-bottom: 15px;
+	border: solid 1px #e3e3e3;
+	padding-left: 8px;
+	font-size: 16px;
+	box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1);
+}
+.contato-form select{
+	width: 100%;
+	height: 48px;
+	margin-bottom: 15px;
+	border: solid 1px #e3e3e3;
+	padding-left: 8px;
+	font-size: 16px;
+	box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1);
+}
+.contato-form textarea{
+	width: 100%;
+	height:120px;
+	margin-bottom: 15px;
+	border: solid 1px #e3e3e3;
+	padding: 8px;
+	font-size: 16px;
+	box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1);
+	resize:none;
+}
+.contato-form input[type=submit]{
+	width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 0 20px 30px 0 rgba(203, 203, 203, 0.2);
+  background-color: #212a97;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 17px;
+}
 
 /*RESPONSIVIDADE*/
-@media screen and (max-width: 768px) {
-    .box-single-diferenciais{
-        width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+
+@media screen and (max-width: 768px){
+	.col-footer{
+        margin-bottom: 30px;
+        width: 100% !important;
+        text-align: center !important;
     }
-    .w50{
-        width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+	.box-single-diferenciais{
+        width: 100%;
     }
-    .img-time{
-        margin-top: 30px;/*Define a parte superior margin de um elemento*/
+	.w50{
+        width: 100%;
     }
-    .menu-mobile{
+	.img-time{
+        margin-top:30px;
+    }
+	.menu-desktop{
+        display: none;
+    }
+	.menu-mobile{
         display: block;
     }
-    .menu-desktop{
-        display: none;
+.sobre-img .img-sobre{
+    padding:0 30px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+	section.sobre-equipe img{
+        margin-top: 20px;
     }
 }

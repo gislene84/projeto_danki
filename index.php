@@ -130,7 +130,24 @@
         </div><!--center-->
     </section><!--metodologia-->
          <div class="center">
-
+            <div class="col-footer">
+                <h2>Suporte</h2>
+                <a href="">Contato</a>
+                <a href="">FAQ</a>
+            </div><!--col-footer-->
+            <div class="col-footer">
+                <h2>Suporte</h2>
+                <a href="">Contato</a>
+                <a href="">FAQ</a>
+            </div><!--col-footer-->
+            <div class="col-footer">
+                <h2>Suporte</h2>
+                <a href="">Contato</a>
+                <a href="">FAQ</a>
+            </div><!--col-footer-->
+            <div class="col-footer-img">
+              <img src="img/logo-dummy.png"/>
+            </div><!--col-footer-img-->
          </div><!--center-->  
     </footer>
 
