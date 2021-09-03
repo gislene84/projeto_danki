@@ -1,3 +1,11 @@
+/*
+Theme name: Danki
+Theme URI: https://cursos.dankicode.com
+Author: Gislene Oliveira
+Author URI: https://dankicode.com
+Description: Tema para o curso de WordPress da Danki Code
+Version: 1.0
+*/
 *{
 	margin: 0;/*espaçamento na largura do lado de fora do elementos*/
 	padding: 0;/*espaçamento na altura do lado de dentro dos elementos*/
@@ -416,75 +424,80 @@ section.sobre-img{
     width: 25%;/*determina a largura da área de conteúdo de um elemento*/
 }
 
+/*CONTATO.PHP*/
+
 section.contato{
 	padding:30px 0;/*preenchimento na altura, 0 cima/baixo 20 direita/esquerda*/
 }
 
 .contato-info h2{
-	color: #202020;
-	font-size: 43px;
-	font-weight: normal;
+	color: #202020;/*cor da fonte*/
+	font-size: 43px;/*tamanho da fonte*/
+	font-weight: normal;/*propriedade especifica o peso de uma fonte*/
 }
 
 .contato-info p{
-	color: #202020;
-	font-size: 15px;
-	margin-bottom: 10px;
+	color: #202020;/*cor da fonte*/
+	font-size: 15px;/*tamanho da fonte*/
+	margin-bottom: 10px;/*define a margin area na parte inferior de um elemento*/
 }
 
 .mapa-container{
-	width: 100%;
-	padding-top: 70%;
-	position: relative;
+	width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+	padding-top: 70%;/*preenchimento na altura 40px cima*/
+	position: relative;/*posiciona o elemento em relação a si mesmo.*/
 }
 
 div#mapa{
-	position: absolute;
-	left: 0;
-	top: 0;
-	background: gray;
-	width: 100%;
-	height: 100%;
+	position: absolute;/* posicionar qualquer elemento de acordo com o elemento pai que tenha um position diferente de static.*/
+	left: 0;/*posicionar a esquerda*/
+	top: 0;/*superior participa da especificação da posição vertical de um elemento posicionado*/
+	background: gray;/*cor de fundo*/
+	width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+	height: 100%;/*determina a altura do elemento*/
 }
-.contato-form{padding:0 30px;margin-top:40px;}
+.contato-form{
+	padding:0 30px;/*preenchimento na altura, 0 cima/baixo 30 direita/esquerda*/
+	margin-top:40px;/*Define a parte superior margin de um elemento*/
+}
 .contato-form input[type=text]{
-	width: 100%;
-	height: 48px;
-	margin-bottom: 15px;
-	border: solid 1px #e3e3e3;
-	padding-left: 8px;
-	font-size: 16px;
-	box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1);
+	width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+	height: 48px;/*determina a altura do elemento*/
+	margin-bottom: 15px;/*define a margin area na parte inferior de um elemento*/
+	border: solid 1px #e3e3e3;/*forma, tamanho e cor da bordar*/
+	padding-left: 8px; /* é um elemento que define o espaço de preenchimento obrigatório no lado esquerdo de um elemento*/
+	font-size: 16px;/*tamanho da fonte*/
+	box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1);/*utilizado para adicionar efeitos de sombra em volta de um elemento. Você pode especificar mais de um efeito, os separando com virgulas.*/
 }
 .contato-form select{
-	width: 100%;
-	height: 48px;
-	margin-bottom: 15px;
-	border: solid 1px #e3e3e3;
-	padding-left: 8px;
-	font-size: 16px;
-	box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1);
+	width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+	height: 48px;/*determina a altura do elemento*/
+	margin-bottom: 15px;/*define a margin area na parte inferior de um elemento*/
+	border: solid 1px #e3e3e3;/*forma, tamanho e cor da bordar*/
+	padding-left: 8px;/* é um elemento que define o espaço de preenchimento obrigatório no lado esquerdo de um elemento*/
+	font-size: 16px;/*tamanho da fonte*/
+	box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1);/*utilizado para adicionar efeitos de sombra em volta de um elemento. Você pode especificar mais de um efeito, os separando com virgulas.*/
 }
 .contato-form textarea{
-	width: 100%;
-	height:120px;
-	margin-bottom: 15px;
-	border: solid 1px #e3e3e3;
-	padding: 8px;
-	font-size: 16px;
-	box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1);
+	width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+	height:120px;/*determina a altura do elemento*/
+	margin-bottom: 15px;/*define a margin area na parte inferior de um elemento*/
+	border: solid 1px #e3e3e3;/*forma, tamanho e cor da bordar*/
+	padding: 8px;/*preenchimento na altura*/
+	font-size: 16px;/*tamanho da fonte*/
+	box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1);/*utilizado para adicionar efeitos de sombra em volta de um elemento. Você pode especificar mais de um efeito, os separando com virgulas.*/
 	resize:none;
 }
 .contato-form input[type=submit]{
-	width: 200px;
-  height: 50px;
-  border-radius: 5px;
-  box-shadow: 0 20px 30px 0 rgba(203, 203, 203, 0.2);
-  background-color: #212a97;
-  border: 0;
-  cursor: pointer;
-  color: white;
-  font-size: 17px;
+	width: 200px;/*determina a largura da área de conteúdo de um elemento*/
+	height: 50px;/*determina a altura do elemento*/
+	border-radius: 5px;/*tamanho da circunferência da bordar*/
+	box-shadow: 0 20px 30px 0 rgba(203, 203, 203, 0.2);/*utilizado para adicionar efeitos de sombra em volta de um elemento. Você pode especificar mais de um efeito, os separando com virgulas.*/
+	background-color: #212a97;/*cor de fundo*/
+	border: 0;/*tamanho da bordar*/
+	cursor: pointer;/*forma do cursor do mouse*/
+	color: white;/*cor da fonte*/
+	font-size: 17px;/*tamanho da fonte*/
 }
 
 /*RESPONSIVIDADE*/
