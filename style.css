@@ -460,7 +460,7 @@ div#mapa{
 	padding:0 30px;/*preenchimento na altura, 0 cima/baixo 30 direita/esquerda*/
 	margin-top:40px;/*Define a parte superior margin de um elemento*/
 }
-.contato-form input[type=text]{
+.contato-form input[type=text] .contato-form input[type=email]{
 	width: 100%;/*determina a largura da área de conteúdo de um elemento*/
 	height: 48px;/*determina a altura do elemento*/
 	margin-bottom: 15px;/*define a margin area na parte inferior de um elemento*/
@@ -498,6 +498,9 @@ div#mapa{
 	cursor: pointer;/*forma do cursor do mouse*/
 	color: white;/*cor da fonte*/
 	font-size: 17px;/*tamanho da fonte*/
+}
+section.erro-404{
+	padding: 30px 0;/*preenchimento na altura, 30 cima/baixo 0 direita/esquerda*/
 }
 
 /*RESPONSIVIDADE*/

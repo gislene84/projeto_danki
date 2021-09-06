@@ -9,7 +9,7 @@
                 <br/>
                 <br/>
                 <div class="w50 time-descricao">
-                    <h2>Melhore a comunicação com o seu cliente e time.</h2>
+                    <h2><?php the_field('chamada_topo')?></h2>
                     <p>Consultoria especializada em startups, empresas, principalmente, pessoas.</p>
                     <a target="_blank" href="https://dankicode.com">Ver demostração</a>
                 </div><!--w50 time-descricao-->
@@ -22,8 +22,11 @@
     </section><!--topo-->
     <div class="circle"><i class="fas fa-angle-down"></i></div><!--circle-->
     <section class="conteudo-da-pagina">
-   
+   <?php
+    the_content();
+   ?>
     </section><!--conteudo-da-pagina-->
+
     <section class="clientes-slider">
         <div class="center">
             <div style="max-width: 700px; margin: 0 auto; overflow: hidden; " class="slider-container">
@@ -32,6 +35,7 @@
             <img src="<?php echo get_theme_root_uri(); ?>/danki/img/dominos.png" />
             <img src="<?php echo get_theme_root_uri(); ?>/danki/img/uber.png" />
             <img src="<?php echo get_theme_root_uri(); ?>/danki/img/walmart.png"/>
+            <img src="<?php the_field('imagem_topo');?>"/>
             </div><!--slider-container-->
         </div><!--center-->
 
@@ -62,10 +66,9 @@
         <div class="center">
             <div class="w50 time-descricao-2">
                 <h2>Um time experiente, <br/>comunicador e coeso.</h2>
-                <p>A Product Runt acredita que marcas fortes são contruídas a partir de transformações importantes e positivas na vida dos consumidores. Exatamente como uma conversa que ganha forma, a ideia vira flâmula.
-                <br/> 
-                <br/>
-                Comunicar bem, de forma coerente e clara não é algo fácil e estamos aqui para ajudar você e o seu time. Você escolhe, remoto ou presencial, para seu cliente ou seu público interno, você determina como vamos te ajudar.</p>
+                <p><?php
+                    the_field('sobre_home');
+                ?></p>
             </div><!--w50 time-descricao-2-->
             <div class="w50 img-time">
                 <img src="<?php echo get_theme_root_uri(); ?>/danki/img/ilustracao-04.png"/>
